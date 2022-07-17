@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vigor.Functional", "Vigor.Functional\Vigor.Functional.csproj", "{C8B126D1-7589-40FA-B522-3A78704294BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vigor.Windows.Native", "Vigor.Windows.Native\Vigor.Windows.Native.csproj", "{1ECB14D7-BD18-442A-8B4B-5C77BBEBA3FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowAttacherLib", "WindowAttacherLib\WindowAttacherLib.csproj", "{421C34DA-CE80-4BD9-AA5A-BA26C3164B04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EhrMock", "EhrMock\EhrMock.csproj", "{29580A7A-AA4C-4F2F-B32B-18119D915999}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowAttacher", "WindowAttacher\WindowAttacher.csproj", "{126554D1-B053-4C87-9571-B9DC543831DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimConnectMock", "VimConnectMock\VimConnectMock.csproj", "{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8B126D1-7589-40FA-B522-3A78704294BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B126D1-7589-40FA-B522-3A78704294BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B126D1-7589-40FA-B522-3A78704294BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B126D1-7589-40FA-B522-3A78704294BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECB14D7-BD18-442A-8B4B-5C77BBEBA3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECB14D7-BD18-442A-8B4B-5C77BBEBA3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECB14D7-BD18-442A-8B4B-5C77BBEBA3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECB14D7-BD18-442A-8B4B-5C77BBEBA3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421C34DA-CE80-4BD9-AA5A-BA26C3164B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421C34DA-CE80-4BD9-AA5A-BA26C3164B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421C34DA-CE80-4BD9-AA5A-BA26C3164B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421C34DA-CE80-4BD9-AA5A-BA26C3164B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29580A7A-AA4C-4F2F-B32B-18119D915999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29580A7A-AA4C-4F2F-B32B-18119D915999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29580A7A-AA4C-4F2F-B32B-18119D915999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29580A7A-AA4C-4F2F-B32B-18119D915999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126554D1-B053-4C87-9571-B9DC543831DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126554D1-B053-4C87-9571-B9DC543831DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126554D1-B053-4C87-9571-B9DC543831DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126554D1-B053-4C87-9571-B9DC543831DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3EA7ED1-6CDC-4262-A7A9-F4DAD0379EC0}
+	EndGlobalSection
+EndGlobal
