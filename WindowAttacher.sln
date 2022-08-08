@@ -15,6 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowAttacher", "WindowAtt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimConnectMock", "VimConnectMock\VimConnectMock.csproj", "{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowResizer", "WindowResizer\WindowResizer.csproj", "{AC0D6036-22B7-438E-BE82-FDB1D759872C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddedVimWidget", "EmbeddedVimWidget\EmbeddedVimWidget.csproj", "{B9DACBF6-D85A-4D74-B9AB-FCE0DC225D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveWindowAttacher", "ActiveWindowAttacher\ActiveWindowAttacher.csproj", "{3869F273-0301-4122-A27D-9308F8F9472D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,18 @@ Global
 		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E822E718-E3D9-4BDF-A6D2-D8FBCAB0A4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0D6036-22B7-438E-BE82-FDB1D759872C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0D6036-22B7-438E-BE82-FDB1D759872C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0D6036-22B7-438E-BE82-FDB1D759872C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0D6036-22B7-438E-BE82-FDB1D759872C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DACBF6-D85A-4D74-B9AB-FCE0DC225D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DACBF6-D85A-4D74-B9AB-FCE0DC225D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DACBF6-D85A-4D74-B9AB-FCE0DC225D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DACBF6-D85A-4D74-B9AB-FCE0DC225D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3869F273-0301-4122-A27D-9308F8F9472D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3869F273-0301-4122-A27D-9308F8F9472D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3869F273-0301-4122-A27D-9308F8F9472D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3869F273-0301-4122-A27D-9308F8F9472D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

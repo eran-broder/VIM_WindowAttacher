@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Vigor.Windows.Native\Vigor.Windows.Native.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Interop.UIAutomationClient">
+      <HintPath>..\VimConnectMock\obj\Debug\net6.0-windows\Interop.UIAutomationClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

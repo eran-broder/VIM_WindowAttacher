@@ -23,7 +23,7 @@ static void HandleParseError(IEnumerable<Error> errs)
 
 void AttachWindow(CommandLineOptions args)
 {
-    Attacher.Attach(new IntPtr(args.Window), 
+    /*Attacher.Attach(new IntPtr(args.Window), 
         new IntPtr(args.Leech), 
-        (args.XOffset, args.YOffset));
+        (args.XOffset, args.YOffset));*/
 }

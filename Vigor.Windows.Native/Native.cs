@@ -37,6 +37,26 @@ public static class Native
         WS_EX_WINDOWEDGE = 0x00000100
     }
 
+    [Flags()]
+    public enum ShowWindowFlags : int
+    {
+        SW_HIDE = 0,
+        SW_SHOWNORMAL = 1,
+        SW_NORMAL = 1,
+        SW_SHOWMINIMIZED = 2,
+        SW_SHOWMAXIMIZED = 3,
+        SW_MAXIMIZE = 3,
+        SW_SHOWNOACTIVATE = 4,
+        SW_SHOW = 5,
+        SW_MINIMIZE = 6,
+        SW_SHOWMINNOACTIVE = 7,
+        SW_SHOWNA = 8,
+        SW_RESTORE = 9,
+        SW_SHOWDEFAULT = 10,
+        SW_FORCEMINIMIZE = 11,
+        SW_MAX = 11,
+    }
+
     [Flags]
     public enum WindowStyles : uint
     {
@@ -77,7 +97,12 @@ public static class Native
         DWLP_DLGPROC = 0x4
     }
 
-    [DllImport("user32.dll", EntryPoint = "GetWindowLong")]
+    public static class SetParentSpecial
+    {
+        public static IntPtr HWND_MESSAGE = new(-3);
+    }
+
+[DllImport("user32.dll", EntryPoint = "GetWindowLong")]
     public static extern IntPtr GetWindowLongPtr(IntPtr hWnd, int nIndex);
 
     // This static method is required because legacy OSes do not support
@@ -625,6 +650,16 @@ public static class Native
         ShowWindow = 0x0040,
     }
 
+    public static class SetWindowPosInsertAfter
+    {
+        public const int HWND_BOTTOM = 1;
+        public const int HWND_NOTOPMOST = -2;
+        public const int HWND_TOP = 0;
+        public const int HWND_TOPMOST = -1;
+    }
+
+    [DllImport("user32.dll")]
+    public static extern bool ShowWindow(IntPtr hWnd, ShowWindowFlags nCmdShow);
 
     [DllImport("user32.dll", SetLastError = true)]
     public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, SetWindowPosFlags uFlags);
@@ -634,5 +669,8 @@ public static class Native
 
     [DllImport("user32.dll", SetLastError = true)]
     public static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
-    
+
+    [DllImport("user32.dll")]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool IsWindow(IntPtr hWnd);
 }

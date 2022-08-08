@@ -13,6 +13,11 @@ public static class NativeAssertions
         AssertNonZero(value != 0, msg);
     }
 
+    public static void AssertNonZero(IntPtr value, string msg = "")
+    {
+        AssertNonZero(value != IntPtr.Zero, msg);
+    }
+
     public static IntPtr AssertNotNullWithLastError(Func<IntPtr> valueEvaluator)
     {
         var value = valueEvaluator();
@@ -32,5 +37,11 @@ public static class NativeAssertions
         if (value == null)
             throw new Exception($"Value is null [{msg}]");
         return value;
+    }
+
+    public static void Assert(bool value, string msg = "")
+    {
+        if (!value)
+            throw new Exception($"Assertion Failed: {msg}");
     }
 }
